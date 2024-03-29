@@ -3,6 +3,7 @@ $hostname\
 $directory\
 $golang\
 $git_branch\
+$git_commit\
 $git_state\
 $git_status\
 $git_metrics\
@@ -35,3 +36,7 @@ show_milliseconds = true
 [golang]
 symbol = ""
 format = '[$symbol ($version) ]($style)'
+
+[git_branch]
+format = " [$symbol$branch]($style) "
+style = "bold yellow"
